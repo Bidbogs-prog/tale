@@ -45,7 +45,7 @@ const ValentinePoemDisplay = () => {
       <div className="fixed inset-0 pointer-events-none p-4 sm:p-8">
         <div className="border-4 border-red-200 rounded-lg h-full relative">
           {/* Top Left Heart */}
-          <div className="absolute -top-3 sm:-top-4 -left-3 sm:-left-4 bg-pink-100">
+          <div className="absolute -top-2 sm:-top-4 -left-2 sm:-left-4 bg-pink-100">
             <svg
               width="24"
               height="24"
@@ -59,8 +59,8 @@ const ValentinePoemDisplay = () => {
             </svg>
           </div>
 
-          {/* Other hearts with similar responsive adjustments */}
-          <div className="absolute -top-3 sm:-top-4 -right-3 sm:-right-4 bg-pink-100">
+          {/* Top Right Heart */}
+          <div className="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 bg-pink-100">
             <svg
               width="24"
               height="24"
@@ -74,7 +74,8 @@ const ValentinePoemDisplay = () => {
             </svg>
           </div>
 
-          <div className="absolute -bottom-3 sm:-bottom-4 -left-3 sm:-left-4 bg-pink-100">
+          {/* Bottom Left Heart */}
+          <div className="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 bg-pink-100">
             <svg
               width="24"
               height="24"
@@ -88,7 +89,8 @@ const ValentinePoemDisplay = () => {
             </svg>
           </div>
 
-          <div className="absolute -bottom-3 sm:-bottom-4 -right-3 sm:-right-4 bg-pink-100">
+          {/* Bottom Right Heart */}
+          <div className="absolute -bottom-2 sm:-bottom-4 -right-2 sm:-right-4 bg-pink-100">
             <svg
               width="24"
               height="24"
@@ -121,8 +123,7 @@ const ValentinePoemDisplay = () => {
 
         <div className="max-w-4xl mx-auto">
           <div className="relative space-y-24 sm:space-y-48 font-serif text-gray-800">
-            {/* Stanzas with responsive text sizes */}
-
+            {/* First stanza */}
             <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
               <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Tales of love
