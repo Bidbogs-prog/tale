@@ -40,17 +40,17 @@ const ValentinePoemDisplay = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-pink-100 to-red-50 relative p-8">
+    <div className="min-h-screen bg-gradient-to-b from-pink-100 to-red-50 relative p-4 sm:p-8">
       {/* Fixed Border with Hearts */}
-      <div className="fixed inset-0 pointer-events-none p-8">
+      <div className="fixed inset-0 pointer-events-none p-4 sm:p-8">
         <div className="border-4 border-red-200 rounded-lg h-full relative">
           {/* Top Left Heart */}
-          <div className="absolute -top-4 -left-4 bg-pink-100">
+          <div className="absolute -top-3 sm:-top-4 -left-3 sm:-left-4 bg-pink-100">
             <svg
-              width="32"
-              height="32"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              className="text-red-400 transform -translate-y-1/2 -translate-x-1/2"
+              className="text-red-400 transform -translate-y-1/2 -translate-x-1/2 sm:scale-125"
             >
               <path
                 fill="currentColor"
@@ -59,13 +59,13 @@ const ValentinePoemDisplay = () => {
             </svg>
           </div>
 
-          {/* Top Right Heart */}
-          <div className="absolute -top-4 -right-4 bg-pink-100">
+          {/* Other hearts with similar responsive adjustments */}
+          <div className="absolute -top-3 sm:-top-4 -right-3 sm:-right-4 bg-pink-100">
             <svg
-              width="32"
-              height="32"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              className="text-red-400 transform -translate-y-1/2 translate-x-1/2"
+              className="text-red-400 transform -translate-y-1/2 translate-x-1/2 sm:scale-125"
             >
               <path
                 fill="currentColor"
@@ -74,13 +74,12 @@ const ValentinePoemDisplay = () => {
             </svg>
           </div>
 
-          {/* Bottom Left Heart */}
-          <div className="absolute -bottom-4 -left-4 bg-pink-100">
+          <div className="absolute -bottom-3 sm:-bottom-4 -left-3 sm:-left-4 bg-pink-100">
             <svg
-              width="32"
-              height="32"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              className="text-red-400 transform translate-y-1/2 -translate-x-1/2"
+              className="text-red-400 transform translate-y-1/2 -translate-x-1/2 sm:scale-125"
             >
               <path
                 fill="currentColor"
@@ -89,13 +88,12 @@ const ValentinePoemDisplay = () => {
             </svg>
           </div>
 
-          {/* Bottom Right Heart */}
-          <div className="absolute -bottom-4 -right-4 bg-pink-100">
+          <div className="absolute -bottom-3 sm:-bottom-4 -right-3 sm:-right-4 bg-pink-100">
             <svg
-              width="32"
-              height="32"
+              width="24"
+              height="24"
               viewBox="0 0 24 24"
-              className="text-red-400 transform translate-y-1/2 translate-x-1/2"
+              className="text-red-400 transform translate-y-1/2 translate-x-1/2 sm:scale-125"
             >
               <path
                 fill="currentColor"
@@ -108,7 +106,7 @@ const ValentinePoemDisplay = () => {
 
       {/* Scrollable Content Container */}
       <div
-        className="max-h-screen overflow-y-auto px-8 py-12 no-scrollbar"
+        className="h-screen overflow-y-auto px-4 sm:px-8 py-8 sm:py-12 no-scrollbar"
         style={{
           scrollbarWidth: "none",
           msOverflowStyle: "none",
@@ -120,10 +118,13 @@ const ValentinePoemDisplay = () => {
             display: none;
           }
         `}</style>
+
         <div className="max-w-4xl mx-auto">
-          <div className="relative space-y-48 font-serif text-gray-800">
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+          <div className="relative space-y-24 sm:space-y-48 font-serif text-gray-800">
+            {/* Stanzas with responsive text sizes */}
+
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Tales of love
                 <br />
                 Are tales galore,
@@ -142,8 +143,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Of passionate love many a tale recount,
                 <br />
                 Love so fiery it chars,
@@ -154,8 +155,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 A tale once told,
                 <br />
                 A story of old,
@@ -172,8 +173,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Of passionate love,
                 <br />
                 This tale resounds,
@@ -188,8 +189,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Yet love is not mere embers cold,
                 <br />
                 Nor passion's flame that dies untold.
@@ -204,8 +205,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Nay, claim the poets,
                 <br />
                 For love is the seed
@@ -224,8 +225,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Like Penelope's vigil
                 <br />
                 Through long, sleepless years,
@@ -244,8 +245,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 For love is the seed
                 <br />
                 From which true hearts grow,
@@ -264,8 +265,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 For love, some suffer,
                 <br />
                 For love, some weep,
@@ -276,8 +277,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 A song once played in sorrow's embrace,
                 <br />
                 A melody woven through time and space.
@@ -292,8 +293,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 The fates stood silent,
                 <br />
                 The gods took heed,
@@ -308,8 +309,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 Alas! Orpheus turned,
                 <br />
                 He turned too soon,
@@ -328,8 +329,8 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-3xl leading-relaxed text-center">
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
+              <p className="text-xl sm:text-3xl leading-relaxed text-center">
                 I read of love in tales and echoes of lore,
                 <br />
                 Yet none could teach what the heart implores.
@@ -340,8 +341,9 @@ const ValentinePoemDisplay = () => {
               </p>
             </div>
 
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8 mb-24">
-              <p className="text-4xl font-medium italic text-red-800 text-center">
+            {/* Final stanza with special styling */}
+            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8 mb-24">
+              <p className="text-2xl sm:text-4xl font-medium italic text-red-800 text-center">
                 Oblivious, I've been,
                 <br />
                 To what love means and what hearts plea,
@@ -355,21 +357,8 @@ const ValentinePoemDisplay = () => {
                 My tale is you.
               </p>
             </div>
-            <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-8">
-              <p className="text-4xl font-medium italic text-red-800 text-center">
-                Oblivious, I've been,
-                <br />
-                To what love means and what hearts plea,
-                <br />
-                Until love itself, in you, found me.
-                <br />
-                My pillar had come, all set in stone,
-                <br />
-                And my tale is true—
-                <br />
-                My tale is you.
-              </p>
-            </div>
+            {/* Add extra padding at the bottom to ensure scrollability */}
+            <div className="h-24"></div>
           </div>
         </div>
       </div>
