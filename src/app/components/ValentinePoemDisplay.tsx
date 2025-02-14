@@ -192,9 +192,9 @@ const ValentinePoemDisplay = () => {
 
             <div className="stanza opacity-0 scale-90 translate-y-16 transition-all duration-1000 ease-out px-2 sm:px-8">
               <p className="text-xl sm:text-3xl leading-relaxed text-center">
-                Yet love is not mere embers cold,
+                Is love but mere embers cold?
                 <br />
-                Nor passion's flame that dies untold.
+                Or passion a flame that dies untold?
                 <br />
                 Is love so tragic?
                 <br />
